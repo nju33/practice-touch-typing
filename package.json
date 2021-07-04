@@ -33,6 +33,7 @@
   },
   "scripts": {
     "prepare": "husky install",
+    "prebuild": "yarn workspace components run build",
     "build": "yarn workspace app run build"
   }
 }
