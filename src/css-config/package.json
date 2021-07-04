@@ -1,0 +1,14 @@
+{
+  "name": "css-config",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": ":"
+  },
+  "peerDependencies": {
+    "autoprefixer": "*",
+    "postcss": "*",
+    "postcss-flexbugs-fixes": "*",
+    "tailwindcss": "*"
+  }
+}

@@ -1,0 +1,42 @@
+{
+  "name": "components",
+  "main": "out/index.js",
+  "source": "src/index.ts",
+  "devDependencies": {
+    "@babel/core": "^7.14.6",
+    "@mdx-js/react": "^1.6.22",
+    "@storybook/addon-actions": "^6.3.2",
+    "@storybook/addon-docs": "^6.3.2",
+    "@storybook/addon-essentials": "^6.3.2",
+    "@storybook/addon-links": "^6.3.2",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/react": "^6.3.2",
+    "@types/babel__core": "^7",
+    "@types/mdx-js__react": "^1",
+    "@types/react": "^17",
+    "@types/react-dom": "^17",
+    "autoprefixer": "^10.2.6",
+    "babel-loader": "^8.2.2",
+    "css-config": "workspace:src/css-config",
+    "postcss": "^8.3.5",
+    "postcss-cli": "^8.3.1",
+    "postcss-flexbugs-fixes": "^5.0.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "tailwindcss": "^2.2.4",
+    "typescript": "^4.3.5"
+  },
+  "peerDependencies": {
+    "react": "*",
+    "react-dom": "*"
+  },
+  "scripts": {
+    "prestorybook": "postcss .storybook/style.css -o .storybook/style.build.css --config postcss.pre.config.js",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook",
+    "build": "tsc"
+  },
+  "resolutions": {
+    "postcss": "8.1.7"
+  }
+}
